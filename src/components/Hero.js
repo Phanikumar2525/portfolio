@@ -3,6 +3,7 @@ import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
+    // eslint-disable-next-line no-unused-vars
     const [displayText, setDisplayText] = useState('');
     const fullText = "Building scalable web applications.";
 

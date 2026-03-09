@@ -74,9 +74,9 @@ image: "/screenshot-712.png",
                                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link-btn" title="View Source">
                                         <FiGithub />
                                     </a>
-                                    <a href="#" className="project-link-btn" title="Live Preview">
+                                    <span className="project-link-btn" title="Live Preview">
                                         <FiExternalLink />
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
 

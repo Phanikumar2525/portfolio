@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
 import {
-    FaJava, FaPython, FaHtml5, FaCss3Alt, FaReact, FaGithub, FaDatabase, FaChartBar
+    FaJava, FaPython, FaHtml5, FaCss3Alt, FaReact, FaDatabase
 } from 'react-icons/fa';
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
