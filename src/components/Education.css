@@ -1,0 +1,121 @@
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 24px;
+    width: 2px;
+    background-color: var(--glass-border);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-primary);
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px var(--accent-glow);
+    transition: transform var(--transition-fast), background-color var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+}
+
+.timeline-icon {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    transition: color var(--transition-fast);
+}
+
+.timeline-item:hover .timeline-icon {
+    color: #fff;
+}
+
+.timeline-content {
+    padding: 2rem;
+    position: relative;
+}
+
+/* Timeline Arrow */
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--glass-border) transparent transparent;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.timeline-header h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.timeline-period {
+    background-color: var(--accent-glow);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.institution {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.score-badge {
+    display: inline-block;
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .timeline-header {
+        flex-direction: column;
+    }
+}
